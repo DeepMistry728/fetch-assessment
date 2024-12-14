@@ -21,6 +21,24 @@ git clone https://github.com/DeepMistry11/fetch-assessment.git
 cd fetch-assessment
 ```
 
+## Project Structure
+
+This project is structured to separate concerns, enhance readability, and ease maintenance. Below is an overview of the key files and their roles in the application:
+
+### `app.js`
+
+- Entry point of the application. It contains all the API endpoints and includes the necessary code to run the server.
+
+### `helpers.js`
+
+- Contains utility functions specifically designed to calculate points based on the rules defined for receipt processing.
+
+### `api.yml`
+
+- Defines the OpenAPI specification for the service.
+- This file is used by `app.js` to validate API requests to ensure they meet the expected formats and standards as documented.
+
+
 ## Docker Setup
 
 Building the container
@@ -32,6 +50,7 @@ Running the Container
 ```bash
 docker run -p 3000:3000 fetch_assessment
 ```
+
 
 ## Summary of API Specification
 
